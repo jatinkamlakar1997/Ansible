@@ -1,5 +1,5 @@
 - name: my first playbook
   hosts: all
-  task:
-  - name: ping the hosts:
+  tasks:
+    name: ping the hosts
       ping: 
