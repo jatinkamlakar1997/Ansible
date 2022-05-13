@@ -1,0 +1,8 @@
+- name: my fisrt web server
+  hosts: all
+  become: true
+  tasks:
+    - name: install webserver
+      yum:
+        name: httpd
+        state: latest
