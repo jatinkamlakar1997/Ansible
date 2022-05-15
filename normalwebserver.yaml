@@ -6,3 +6,10 @@
       yum:
         name: httpd
         state: latest
+
+    - name: start httpd daemom
+      service: 
+        state: started
+        name: httpd
+        enabled: true
+        
